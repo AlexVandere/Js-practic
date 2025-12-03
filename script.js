@@ -1,13 +1,19 @@
-const minNum = Math.floor(Math.random()*(59-0)+0)
-console.log(minNum)
-
-
-if (minNum < 15) {
-    console.log(`${minNum}:ввели першу чтверь`)
-}else if ( minNum <= 30 ) {
-    console.log('ввели другу чтверь')
-} else if ( minNum <= 45 ){
-      console.log('ввели тьретю чтверь')
-} else {
-      console.log('ввели четверту чтверь')
+let userPrompt = +prompt('ведіть число від 1 до 4 ')
+let result 
+switch (userPrompt) {
+    case 1:
+        result = 'зима'
+        break;
+    case 2:
+        result = 'весна'
+        break;
+    case 3:
+        result = 'літо'
+        break;
+    case 4:
+        result = 'осінь'
+        break
+    default:
+        result ='ведіть будь ласка друге значення'
 }
+alert(result)
